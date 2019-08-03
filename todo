@@ -1,5 +1,6 @@
 - Load json in vue main app component
-  - Pass json file to child component
+  - x Pass only an object to child component, an object per new employee card created
+  - x Pass json file to child component
   -  Get state of position in array of employees.json 
   - x Make json file
   

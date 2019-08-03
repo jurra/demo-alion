@@ -1,5 +1,5 @@
 <template>
-  <div class="column is-one-quarter">
+  <div class>
     <div class="card">
       <div class="card-image">
         <figure class="image is-4by3">
@@ -36,7 +36,7 @@
 <script>
 export default {
   name: "EmployeeCard",
-  props: ["employees"]
+  props: ["employee"]
 };
 </script>
 

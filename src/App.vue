@@ -1,13 +1,16 @@
 <template>
-  <div id="app" class="container">
-    <EmployeCard :employees="Employees" />
+  <div id="app" class="columns">
+    <div v-for="employee in Employees.Employees" :employee="employee">
+      <div class="column">
+        <EmployeCard :employee="employee" />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 /**
- * import json
- * for statement to load components
+ *
  */
 import EmployeCard from "./components/EmployeeCard.vue";
 import Employees from "./../data/employees.json";
