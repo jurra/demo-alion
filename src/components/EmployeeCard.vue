@@ -36,9 +36,7 @@
 <script>
 export default {
   name: "EmployeeCard",
-  props: {
-    msg: String
-  }
+  props: ["employees"]
 };
 </script>
 

@@ -1,8 +1,20 @@
 - Load json in vue main app component
-  - Make json file
-- Get Alion styles
-- Child component employeecards
-- Child component, slider of detailed employe info 
+  - Pass json file to child component
+  -  Get state of position in array of employees.json 
+  - x Make json file
+  
+- Get/Recreate Alion styles
 
-Checklist:
-- computed property for current team member view
+- Child component employeecards
+  -  
+  - Create row and column per card if number of cards is higher than n ammount of columns then create a new row and new columns per card
+  - Add hover to styles
+
+- Child component, slider of detailed employe info 
+    - computed property for current team member view
+
+- Router for pages per employee
+- Navbar component
+
+- Form validation for contact
+  - Set v-model

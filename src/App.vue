@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container">
-    <EmployeCard msg="New alion app" />
+    <EmployeCard :employees="Employees" />
   </div>
 </template>
 
