@@ -10,9 +10,7 @@
 </template>
 
 <script>
-/**
- *
- */
+
 import EmployeeCard from "./components/EmployeeCard.vue";
 import Employees from "./../data/employees.json";
 
