@@ -1,0 +1,8 @@
+- Load json in vue main app component
+  - Make json file
+- Get Alion styles
+- Child component employeecards
+- Child component, slider of detailed employe info 
+
+Checklist:
+- computed property for current team member view
