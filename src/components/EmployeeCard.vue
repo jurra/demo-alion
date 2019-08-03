@@ -18,13 +18,15 @@
             <p class="subtitle is-6">@johnsmith</p>
           </div>
         </div>
-
+        
         <div class="content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Phasellus nec iaculis mauris.
           <a>@bulmaio</a>.
           <a href="#">#css</a>
           <a href="#">#responsive</a>
+          <br />
+          <div class="button is-primary">Read more about {{employee.name}}</div>
           <br />
           <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
         </div>
@@ -42,6 +44,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang=scss>
+.card{
+  	transition: transform 500ms;
+}
 .card:hover {
   /* transition */
   transition: transform 400ms;
