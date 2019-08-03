@@ -42,4 +42,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang=scss>
+.card:hover {
+  /* transition */
+  transition: transform 400ms;
+  /* transform */
+  transform: scale(1.05);
+}
 </style>
