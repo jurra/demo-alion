@@ -13,7 +13,7 @@
         },
         {
             "id": null,
-            "name": null,
+            "name": "Jhon",
             "role": null,
             "header": null,
             "about": null,
@@ -25,7 +25,7 @@
         },
         {
             "id": null,
-            "name": null,
+            "name": "Bea",
             "role": null,
             "header": null,
             "about": null,
@@ -37,7 +37,19 @@
         },
         {
             "id": null,
-            "name": null,
+            "name": "Cristobal",
+            "role": null,
+            "header": "I am a child",
+            "about": null,
+            "image": null,
+            "icon": null,
+            "email": null,
+            "github": null,
+            "twitter": null
+        },
+        {
+            "id": null,
+            "name": "Julita",
             "role": null,
             "header": null,
             "about": null,
@@ -49,19 +61,7 @@
         },
         {
             "id": null,
-            "name": null,
-            "role": null,
-            "header": null,
-            "about": null,
-            "image": null,
-            "icon": null,
-            "email": null,
-            "github": null,
-            "twitter": null
-        },
-        {
-            "id": null,
-            "name": null,
+            "name": "Jhon",
             "role": null,
             "header": null,
             "about": null,
