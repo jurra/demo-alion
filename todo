@@ -4,21 +4,31 @@
   - x Pass json file to child component
   - x Make json file
   
-- Get/Recreate Alion styles
+- Styles: Get/Recreate Alion styles
+  - Colors
+  - x Font
+  - Spacing between cards
+
 
 - Child component employeecards
-  -  Render 3 cards per row 
-    - How to render 3 cards per row when we have 9 
-      - we have to count object when being rendered
-      - if object number > 3 then start a new row ("columns in bulma")
-  - Create row and column per card if number of cards is higher than n ammount of columns then create a new row and new columns per card
-  - Add hover to styles
-
-- Child component, slider of detailed employe info 
-    - computed property for current team member view
-
-- Router for pages per employee
-- Navbar component
+  -  x Render 3 cards per row 
+    - x How to render 3 cards per row when we have 9, multi-line columns
+    - ... read more button (animated)
 
 - Form validation for contact
   - Set v-model
+
+  - x Create row and column per card if number of cards is higher than n ammount of columns then create a new row and new columns per card
+  - Add hover to styles
+    - x On hover scale card 
+    - Change color of name animation, as a keyframe
+
+- Child component, slider of detailed employee info 
+    - active property to point to index in object array
+    - slide on phone, with finger
+
+- Router for pages per employee
+  - Start with slider component
+
+- Navbar component
+
