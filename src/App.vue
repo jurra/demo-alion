@@ -1,10 +1,7 @@
 <template>
-<!-- App.vue gets employees.json and child components and renders data accordingly to events and interactions
- -->
   <div class="container">
     <div class="columns is-centered is-multiline">
-        <EmployeeCard v-for="employee in Employees.Employees" :employee="employee" />
-      </div>
+      <EmployeeCard v-for="employee in Employees.Employees" :employee="employee" />
     </div>
   </div>
 </template>
@@ -25,7 +22,7 @@ export default {
     return {
       Employees
     };
-  },
+  }
 };
 </script>
 
