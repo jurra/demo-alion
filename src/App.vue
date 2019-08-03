@@ -1,21 +1,31 @@
 <template>
-  <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div id="app" class="container">
+    <EmployeCard msg="New alion app" />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+/**
+ * import json
+ * for statement to load components
+ */
+import EmployeCard from "./components/EmployeeCard.vue";
+import Employees from "./../data/employees.json";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    EmployeCard
+  },
+  data() {
+    return {
+      Employees
+    };
   }
 };
 </script>
 
-<style>
+<style lan="scss">
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
