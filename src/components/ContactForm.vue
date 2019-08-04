@@ -7,7 +7,7 @@
         <div class="field">
           <label class="label">Name</label>
           <div class="control">
-            <input v-model="form.name" class="input" type="text" placeholder="Text input" />
+            <input v-model="form.name" :class="[nameIsValid ? 'input is-success' : 'input is-danger']" type="text" placeholder="Text input" />
           </div>
         </div>
         <div class="field">
@@ -15,7 +15,7 @@
           <div class="control has-icons-left has-icons-right">
             <input
               v-model="form.email"
-              class="input is-danger"
+              :class="[emailIsValid ? 'input is-success' : 'input is-danger']"
               type="email"
               placeholder="Email input"
               value="hello@"
@@ -27,7 +27,6 @@
               <i class="fas fa-exclamation-triangle"></i>
             </span>
           </div>
-          <p class="help is-danger">This email is invalid</p>
         </div>
 
         <div class="field">
@@ -65,15 +64,16 @@ export default {
     };
   },
   computed: {
-    emailIsNotValid() {
-      console.log("email not valid");
+    nameIsValid() {
+      return !!this.form.name;
+    },
+    emailIsValid() {
+      return validateEmail(this.form.email);
     }
   },
   methods: {
     submitForm() {
-      const emailIsValid = validateEmail(this.form.email);
-      const nameIsValid = !!this.form.name;
-      const formIsValid = nameIsValid && emailIsValid;
+      const formIsValid = this.nameIsValid && this.emailIsValid;
 
       if (formIsValid) {
         console.log("Form Submitted", this.form);
