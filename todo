@@ -1,29 +1,38 @@
+
 - Load json in vue main app component
-  -  Get state of position in array of employees.json 
+  03-08-2019:
   - x Pass only an object to child component, an object per new employee card created
   - x Pass json file to child component
   - x Make json file
   
 - Styles: Get/Recreate Alion styles
-  - Colors
-  - x Font
-  - Spacing between cards
-
+    04-08-2019
+    - x Font
+    - x Spacing between cards
+    - x favicon Alion for website
+    - x !!! import icons to use with bulma !!!
 
 - Child component employeecards
-  -  x Render 3 cards per row 
+  03-08-2019:
+    - x Render 3 cards per row 
     - x How to render 3 cards per row when we have 9, multi-line columns
-    - ... read more button (animated)
+    - x read more button (animated)
+    - x Create row and column per card if number of cards is higher than n ammount of columns then create a new row and new columns per card
+  - x Add hover to styles
+    - x On hover scale card 
+    - x Change color of name animation, as a keyframe
 
 - Form validation for contact
-  - Set v-model
+  04-08-2019:
+  - x Conditional classes for input field
+  - x Set v-model
+  - x methods for validation, check if name, age, and message is valid...
+  - x The name of the field is required
 
-  - x Create row and column per card if number of cards is higher than n ammount of columns then create a new row and new columns per card
-  - Add hover to styles
-    - x On hover scale card 
-    - Change color of name animation, as a keyframe
+  
 
-- Child component, slider of detailed employee info 
+- Child component, slider of detailed employee info
+    - Get state of position in array of employees.json 
     - active property to point to index in object array
     - slide on phone, with finger
 
@@ -31,4 +40,5 @@
   - Start with slider component
 
 - Navbar component
+
 

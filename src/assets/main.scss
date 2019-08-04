@@ -4,5 +4,9 @@ $body-family:"Merriweather",
 "Times",
 serif;
 $primary:#fd7208;
+$input-focus-border-color:$primary;
+$input-focus-color:#818ba3;
 @import "~bulma/bulma";
-// Import only what you need from Bulma
+.section {
+    margin-bottom: 1em;
+}
