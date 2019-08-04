@@ -7,7 +7,12 @@
         <div class="field">
           <label class="label">Name</label>
           <div class="control">
-            <input v-model="form.name" :class="[nameIsValid ? 'input is-success' : 'input is-danger']" type="text" placeholder="Text input" />
+            <input
+              v-model="form.name"
+              :class="[nameIsValid ? 'input is-success' : 'input is-danger']"
+              type="text"
+              placeholder="Text input"
+            />
           </div>
         </div>
         <div class="field">
@@ -32,7 +37,7 @@
         <div class="field">
           <label class="label">Message</label>
           <div class="control">
-            <textarea class="textarea" placeholder="Textarea"></textarea>
+            <textarea v-model="form.message" class="textarea" placeholder="Textarea"></textarea>
           </div>
         </div>
 
@@ -59,7 +64,8 @@ export default {
     return {
       form: {
         name: null,
-        email: null
+        email: null,
+        message: null
       }
     };
   },
@@ -69,13 +75,14 @@ export default {
     },
     emailIsValid() {
       return validateEmail(this.form.email);
+    },
+    formIsValid() {
+      return this.nameIsValid && this.emailIsValid;
     }
   },
   methods: {
     submitForm() {
-      const formIsValid = this.nameIsValid && this.emailIsValid;
-
-      if (formIsValid) {
+      if (this.formIsValid) {
         console.log("Form Submitted", this.form);
       } else {
         console.log("X Invalid form");
