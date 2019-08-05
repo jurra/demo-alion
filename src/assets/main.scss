@@ -15,7 +15,7 @@ $input-focus-border-color:$primary;
 @import"./carousel.scss";
 @import"ContactForm";
 .section {
-    background-image: linear-gradient(to top right, rgba(252, 25, 63, 0.95), rgba(252, 173, 25, 0.9)), url(../../public/img/back-text.png);
+    background-image: linear-gradient(to bottom right, rgba(255, 196, 0, 0.843), rgba(252, 59, 25, 0.8)), url(../../public/img/back-text.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
