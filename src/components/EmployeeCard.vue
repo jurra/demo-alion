@@ -2,8 +2,13 @@
   <div class="column is-one-third">
     <div class="card">
       <div class="card-image">
-        <figure class="image is-4by3">
-          <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+        <figure class="image is-4by4">
+          <img
+            v-if="!employee.image"
+            src="https://bulma.io/images/placeholders/1280x960.png"
+            alt="Placeholder image"
+          />
+          <img v-if="employee.image" :src="'/img/' + employee.image" />
         </figure>
       </div>
       <div class="card-content">
@@ -18,7 +23,7 @@
             <p class="subtitle is-6">@johnsmith</p>
           </div>
         </div>
-        
+
         <div class="content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Phasellus nec iaculis mauris.
@@ -44,8 +49,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang=scss>
-.card{
-  	transition: transform 500ms;
+.card {
+  transition: transform 500ms;
 }
 .card:hover {
   /* transition */
