@@ -6,6 +6,7 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <EmployeeCar :employees="Employees.Employees" />
     <div class="container section">
       <div class="columns is-centered is-multiline is-variable is-7">
         <EmployeeCard v-for="employee in Employees.Employees" :employee="employee" />
@@ -23,12 +24,14 @@
 import Employees from "./../data/employees.json";
 import EmployeeCard from "./components/EmployeeCard.vue";
 import ContactForm from "./components/ContactForm.vue";
+import EmployeeCar from "./components/EmployeeCar.vue";
 
 export default {
   name: "app",
   components: {
     EmployeeCard,
-    ContactForm
+    ContactForm,
+    EmployeeCar
   },
   data() {
     return {
