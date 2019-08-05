@@ -11,9 +11,11 @@ serif;
 $primary:#fd7208;
 $input-focus-border-color:$primary;
 // $input-focus-color:#818ba3;
-@import"./carousel.scss";
 @import "~bulma/bulma";
+@import"./carousel.scss";
 @import"ContactForm";
 .section {
-    margin-bottom: 1em;
+    background-image: linear-gradient(to top right, rgba(252, 25, 63, 0.95), rgba(252, 173, 25, 0.9)), url(../../public/img/back-text.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }

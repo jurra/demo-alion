@@ -6,12 +6,15 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <EmployeeCar :employees="Employees.Employees" />
-    <div class="container section">
+    <div class="section">
+      <EmployeeCar :employees="Employees.Employees" />
+    </div>
+
+    <!-- <div class="container section">
       <div class="columns is-centered is-multiline is-variable is-7">
         <EmployeeCard v-for="employee in Employees.Employees" :employee="employee" />
       </div>
-    </div>
+    </div>-->
     <ContactForm />
   </div>
 </template>
