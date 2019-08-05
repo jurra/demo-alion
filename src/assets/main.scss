@@ -1,12 +1,22 @@
-$body-family:"Merriweather",
-"Georgia",
-"Times New Roman",
-"Times",
-serif;
 $primary:#fd7208;
 $input-focus-border-color:$primary;
 $input-focus-color:#818ba3;
+@import"./carousel.scss";
+// General styles
+// $body-family:"Merriweather",
+// "Georgia",
+// "Times New Roman",
+// "Times",
+// serif;
+$primary:#fd7208;
+$input-focus-border-color:$primary;
+$navbar-padding-horizontal:13rem;
+$navbar-height:4.25rem;
+$navbar-item-img-max-height:3.5rem; // $input-focus-color:#818ba3;
 @import "~bulma/bulma";
+@import"ContactForm";
 .section {
-    margin-bottom: 1em;
+    background-image: linear-gradient(to bottom right, rgba(255, 196, 0, 0.843), rgba(252, 59, 25, 0.8)), url(../../public/img/back-text.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }

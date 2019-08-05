@@ -1,11 +1,19 @@
-- variable widths for mobile, vs desktop:
-    - use bulma classes
+- x Upload to github
+- Readme.md
+- package.json description
+
+- x Change text placeholder Message form
+
+- x variable widths for mobile, vs desktop:
+    - x use bulma classes
+        - x Put lion background in main.scss and use an if mobile statement to remove the lion
+        - x Add input placeholder for other browsers
 
 
-- Child component, slider of detailed employee info
-    - Get state of position in array of employees.json 
-    - active property to point to index in object array
-    - slide on phone, with finger
+- x Child component, slider of detailed employee info
+    - x Get state of position in array of employees.json 
+    - x active property to point to index in object array
+    - x slide on phone, with finger
 
 - Router for pages per employee
   - Start with slider component

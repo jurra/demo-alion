@@ -1,0 +1,74 @@
+.tinted-image .title {
+    padding-top: 1em;
+    color: #cad0e3;
+}
+
+.container {
+    padding: 1em;
+}
+
+.label {
+    color: #cad0e3;
+}
+
+
+/*Component background*/
+
+.invert {
+    background-color: #05102b;
+}
+
+.input,
+.textarea {
+    color: #cad0e3;
+    background-color: #263761;
+    border-color: transparent;
+    &::placeholder {
+        color: #818ba3;
+        opacity: 1;
+    }
+}
+
+
+/*Valid input styles*/
+
+.success {
+    color: white;
+    background-color: #fd7208;
+}
+
+.control.has-icons-left .input:focus~.icon,
+.control.has-icons-left .select:focus~.icon,
+.control.has-icons-right .input:focus~.icon,
+.control.has-icons .select:focus~.icon {
+    color: white;
+}
+
+
+/*form background*/
+
+.tinted-image {
+    background: /* top, transparent red, faked with gradient */
+    linear-gradient(rgba(38, 55, 97, 0.45), rgba(38, 55, 97)), /* bottom, image */
+    url(../assets/alion-back.jpg);
+    background-repeat: no-repeat;
+    height: 110vh;
+}
+
+.back {
+    z-index: -1;
+    width: 100%;
+    height: 110vh;
+    background-color: black;
+    position: absolute;
+}
+
+@media screen and (max-width: $tablet - 1px) {
+    .tinted-image {
+        background: none;
+        height: 110vh;
+    }
+    .back {
+        background-color: #05102b;
+    }
+}
