@@ -7,7 +7,7 @@
             <figure class="image is-4by4">
               <img :src="'/img/' + person.image" />
             </figure>
-            <div class="card-content has-text-centered">
+            <div id="card" class="card-content has-text-centered">
               <div class="content">
                 <h1 :class="[windowWidth>700 ? 'title is-3' : 'is-size-5']">{{person.name}}</h1>
                 <h1 :class="[windowWidth>700 ? 'title is-5' : 'is-size-6']">{{person.role}}</h1>
@@ -68,5 +68,10 @@ export default {
 };
 </script>
 <style scoped>
+.title,
+.is-size-5,
+.is-size-6 {
+  color: #818ba3;
+}
 </style>
 
