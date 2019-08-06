@@ -4,8 +4,11 @@
       <Slide v-for="(person,i) in employees" :index="i" :employee="person">
         <div class>
           <div class="card-image">
-            <figure class="image is-4by4">
+            <figure v-if="person.image" class="image is-4by4">
               <img :src="'/img/' + person.image" />
+            </figure>
+            <figure v-else class="image is-4by4">
+              <img src="/img/sinterclass.png" />
             </figure>
             <div id="card" class="card-content has-text-centered">
               <div class="content">
