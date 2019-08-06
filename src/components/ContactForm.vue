@@ -54,6 +54,7 @@
             <div class="control">
               <textarea v-model="form.message" class="textarea" placeholder="Textarea"></textarea>
             </div>
+            <p v-if="!messageIsValid" class="help">This field is required</p>
           </div>
 
           <div class="field is-grouped">
@@ -104,8 +105,11 @@ export default {
     emailIsValid() {
       return validateEmail(this.form.email);
     },
+    messageIsValid() {
+      return !!this.form.message;
+    },
     formIsValid() {
-      return this.nameIsValid && this.emailIsValid;
+      return this.nameIsValid && this.emailIsValid && this.messageIsValid;
     }
   },
   methods: {
