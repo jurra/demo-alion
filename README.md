@@ -1,5 +1,7 @@
 # Alion application demo
 
+![demo image](demo-img.gif)
+
 A vuejs demo website presenting an employee carousel, and a contact form.
 
 > For details on the development process see the [todo](todo.md) list.
