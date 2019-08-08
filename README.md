@@ -16,6 +16,12 @@ yarn install
 yarn run serve
 ```
 
+> To test the swipe functionality in the smartphone us the following port:
+
+```
+Network: http://192.168.1.101:8080/
+```
+
 ### Compiles and minifies for production
 
 ```
