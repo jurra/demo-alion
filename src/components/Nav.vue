@@ -21,7 +21,7 @@
         <div class="navbar-end">
           <a class="navbar-item" href="https://github.com/jurra/demo-alion">
             <span>Github Repo</span>
-            <span class="icon">
+            <span class="icon has-text-grey">
               <i class="fab fa-github"></i>
             </span>
           </a>
