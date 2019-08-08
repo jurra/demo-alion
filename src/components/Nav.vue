@@ -17,11 +17,14 @@
       <!--
     Using the v-bind: directive to reactively update the class attribute 'is-active' based on the showNav property.
       -->
-      <div class="navbar-menu" :class="{ 'is-active': showNav }">
+      <div class="navbar-menu" :class="{ 'is-active is-mobile': showNav }">
         <div class="navbar-end">
-          <a class="navbar-item" href="/about">About</a>
-          <a class="navbar-item" href="/path">Path</a>
-          <a class="navbar-item" href="/blog">Blog</a>
+          <a class="navbar-item" href="https://github.com/jurra/demo-alion">
+            <span>Github Repo</span>
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+          </a>
         </div>
       </div>
     </nav>
@@ -36,4 +39,13 @@ export default {
   }
 };
 </script>
+<style scoped>
+.is-mobile {
+  position: absolute;
+  width: 60%;
+  right: 0px;
+  top: 4.2rem;
+}
+</style>
+
 
